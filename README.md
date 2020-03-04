@@ -2,6 +2,8 @@
 
 ## Atenção: Este projeto está em fase de implementação, não use em produção antes da versão 1.0.0
 
+## Atenção: Esta engine manipula diretamente o state, então os dados da fila não são commitados. Em uma implementação futura isto será corrigido. Neste momento a fila não é exibida corretamente nas ferramentas de debug
+
 ## Como Usar
 
 - No seu arquivo js inicial do projeto (ex: main.js ou index.js) importe VueEngine e passe sua store como valor de dados, nesta store é onde estará a fila de tarefas. Passe também o tempo de execução entre os loops, este valor é em segundos.

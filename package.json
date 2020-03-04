@@ -1,6 +1,6 @@
 {
   "name": "@digitalbocca/vue-engine",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Uma engine que executa tarefas de uma lista.",
   "main": "src/index.js",
   "dependencies": {

@@ -22,7 +22,7 @@ export default class Engine {
     if (fila.length > 0) {
       const now = DateTime.local()
       fila.forEach((item, id) => {
-        if (now > item.tempo) {
+        if (now > item.time) {
           console.log('Executando a tarefa')
           item.action()
           fila.splice(id, 1)
