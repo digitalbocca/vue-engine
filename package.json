@@ -1,0 +1,26 @@
+{
+  "name": "@digitalbocca/vue-engine",
+  "version": "0.1.0",
+  "description": "Uma engine que percorre uma lista de tarefas em um tempo determinado",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digitalbocca/vue-engine.git"
+  },
+  "keywords": [],
+  "author": "Gabriel Bertola Bocca - gabriel at estudiodigitalbocca.com.br",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/digitalbocca/vue-engine/issues"
+  },
+  "homepage": "https://github.com/digitalbocca/vue-engine#readme",
+  "dependencies": {
+    "luxon": "^1.22.0"
+  },
+  "devDependencies": {
+    "standard": "^14.3.1"
+  }
+}
