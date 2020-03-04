@@ -1,6 +1,6 @@
 {
   "name": "@digitalbocca/vue-engine",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Uma engine que percorre uma lista de tarefas em um tempo determinado",
   "main": "src/index.js",
   "scripts": {
