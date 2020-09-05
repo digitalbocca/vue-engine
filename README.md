@@ -4,6 +4,8 @@
 
 ## Atenção: Esta engine manipula diretamente o state, então os dados da fila não são commitados. Em uma implementação futura isto será corrigido. Neste momento a fila não é exibida corretamente nas ferramentas de debug
 
+> Adição de tarefas na fila já são commitadas, apenas a remoção ainda não está sendo commitada.
+
 ## Como Usar
 
 - No seu arquivo js inicial do projeto (ex: main.js ou index.js) importe VueEngine e passe sua store como valor de dados, nesta store é onde estará a fila de tarefas. Passe também o tempo de execução entre os loops, este valor é em segundos.
@@ -32,4 +34,20 @@ window.vm.$adicionarTarefa({
   time: DateTime.local().plus({ seconds: 20 }),
   action: () => console.log('Executei a ação')
 })
+```
+
+- Devido aos problemas com namespaces e registerModules estas funcionalidades não foram implementadas nesta versão. Crie uma mutation ```ADD_TASK``` para o commit da mudança de estado.
+
+```javascript
+ADD_TASK (state, tarefa) {
+  state.fila.push(tarefa)
+}
+```
+
+- O método $adicionarTarefa() faz um dispatch para uma action addTask.
+
+```javascript
+addTask (context, tarefa) {
+  context.commit('ADD_TASK', tarefa)
+}
 ```
