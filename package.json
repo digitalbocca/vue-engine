@@ -1,13 +1,13 @@
 {
   "name": "@digitalbocca/vue-engine",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Uma engine que executa tarefas de uma lista.",
   "main": "src/index.js",
   "dependencies": {
-    "luxon": "^1.25.0"
+    "luxon": "^1.26.0"
   },
   "devDependencies": {
-    "standard": "^14.3.4"
+    "standard": "^16.0.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
