@@ -4,7 +4,7 @@
   "description": "Uma engine que executa tarefas de uma lista.",
   "main": "src/index.js",
   "dependencies": {
-    "luxon": "^1.26.0"
+    "luxon": "^2.5.2"
   },
   "devDependencies": {
     "standard": "^16.0.3"
